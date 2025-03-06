@@ -1,0 +1,106 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Mvc Stok</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/Kategori/Index">Kategoriler</a></li>
+                <li><a href="/Urun/Index">Ürünler</a></li>
+                <li><a href="/Musteri/">Müşteriler</a></li>
+                <li><a href="/Satis/Index">Satışlar</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#Modal1 ">Yardım</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div class="modal" id="Modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"></h2>
+                    <button type="button" class="close" data-dismiss="modal" style="font-size:30px">&times;</button>
+
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <h1>MVC Stok Takip Sistemi - Yardım</h1>
+
+                        <h2>📌 Proje Hakkında</h2>
+                        <p>Bu proje, <strong>ASP.NET MVC</strong> kullanarak geliştirilmiş bir <strong>stok takip sistemidir</strong>. Sistem, kategoriler, ürünler, müşteriler ve satış işlemlerini yönetmeyi sağlar.</p>
+
+                        <h2>🔹 Özellikler</h2>
+                        <ul>
+                            <li><strong>Kategori Yönetimi:</strong> Yeni kategoriler ekleyebilir, düzenleyebilir ve silebilirsiniz.</li>
+                            <li><strong>Ürün Yönetimi:</strong> Ürünleri ekleyebilir, markasını belirleyebilir, fiyatını ve stok durumunu güncelleyebilirsiniz.</li>
+                            <li><strong>Müşteri Yönetimi:</strong> Müşteri bilgilerini ekleyebilir ve güncelleyebilirsiniz.</li>
+                            <li><strong>Satış İşlemleri:</strong> Ürün satışlarını gerçekleştirebilir ve takip edebilirsiniz.</li>
+                        </ul>
+
+                        <h2>📖 Kullanım Kılavuzu</h2>
+
+                        <h3>1️⃣ Kategoriler</h3>
+                        <ul>
+                            <li><strong>Yeni Kategori Ekle:</strong> "Kategoriler" sekmesine giderek "Yeni Kategori Ekle" butonuna tıklayın.</li>
+                            <li><strong>Kategori Güncelle:</strong> Güncellemek istediğiniz kategorinin yanındaki "Güncelle" butonuna tıklayın.</li>
+                            <li><strong>Kategori Sil:</strong> Bir kategori silmek için "Sil" butonuna tıklayın.</li>
+                        </ul>
+
+                        <h3>2️⃣ Ürünler</h3>
+                        <ul>
+                            <li><strong>Yeni Ürün Ekle:</strong> "Ürünler" sekmesinden "Yeni Ürün Ekle" butonuna tıklayın.</li>
+                            <li><strong>Ürün Güncelle:</strong> Bir ürünü güncellemek için ilgili ürünün yanındaki "Güncelle" butonunu kullanın.</li>
+                            <li><strong>Ürün Sil:</strong> Bir ürünü silmek için "Sil" butonuna tıklayın.</li>
+                        </ul>
+
+                        <h3>3️⃣ Müşteriler</h3>
+                        <ul>
+                            <li><strong>Yeni Müşteri Ekle:</strong> "Müşteriler" sekmesine giderek müşteri bilgilerini girin ve kaydedin.</li>
+                            <li><strong>Müşteri Güncelle:</strong> Mevcut müşterinin bilgilerini değiştirmek için "Güncelle" butonuna tıklayın.</li>
+                            <li><strong>Müşteri Sil:</strong> Bir müşteriyi silmek için "Sil" butonuna tıklayın.</li>
+                        </ul>
+
+                        <h3>4️⃣ Satış İşlemleri</h3>
+                        <ul>
+                            <li><strong>Satış Yap:</strong> "Satışlar" sekmesine giderek yeni bir satış ekleyin.</li>
+                            <li><strong>Satışları Listeleme:</strong> Yapılan satışları bu sayfada görüntüleyebilirsiniz.</li>
+                        </ul>
+
+                        <h2>❓ Sıkça Sorulan Sorular</h2>
+
+                        <h3>🔹 Stok miktarı sıfır olan bir ürünü satabilir miyim?</h3>
+                        <p>Hayır, stokta olmayan ürünler satışa sunulmaz.</p>
+
+                        <h3>🔹 Kategori silerken hata alıyorum, neden?</h3>
+                        <p>Eğer bir kategoriye bağlı ürün varsa, kategori silinemez. Öncelikle o kategorideki ürünleri kaldırmalısınız.</p>
+
+                        <h2>📧 Destek & İletişim</h2>
+                        <p>Herhangi bir hata veya sorunda, destek ekibimizle iletişime geçebilirsiniz.</p>
+                        <p><strong>📩 E-posta:</strong> <a href="mailto:destek@stokmvc.com">ikagancevik@mail.com</a></p>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

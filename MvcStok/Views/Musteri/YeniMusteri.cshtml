@@ -1,0 +1,28 @@
+﻿@model MvcStok.Models.Entity.TBLMUSTERILER
+@{
+    ViewBag.Title = "YeniMusteri";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form method="post">
+    <div>
+        <label>Müşteri Adı</label>
+        @Html.TextBoxFor(x => x.MUSTERIAD, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.MUSTERIAD, "", new { @style = "color:red" })
+
+    </div>
+    <div>
+        <label>Müşteri Soyadı</label>
+        <input type="text" class="form-control" name="MUSTERISOYAD" />
+    </div>
+    <div style="margin-top:15px">
+        <button class="btn btn-info" id="btn1">YENİ MÜŞTERİ EKLE</button>
+    </div>
+    <script>
+        $('#btn1').click(function ()
+            {
+                alert('Müşteri Ekleme İşlemi Yapıldı...!!!');
+            });
+    </script>
+</form>
+
