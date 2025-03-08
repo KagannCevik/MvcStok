@@ -4,8 +4,7 @@
 Bu proje, **ASP.NET MVC** kullanılarak geliştirilmiş bir **stok takip sistemi**dir. Kategoriler, ürünler, müşteriler ve satış işlemleri gibi temel stok yönetimi fonksiyonlarını içerir.
 Ayrıca, bu projede **CRUD** işlemleri, **veri yönetimi**, **form doğrulama** gibi önemli yazılım geliştirme pratikleri de yer almaktadır.
 
-📚 **Neler Öğrendim?**  
-Her aşama, bana yazılım dünyasının ne kadar derin ve geniş olduğunu gösterdi ve öğrendiklerimi daha sağlam temellere oturtmama yardımcı oldu.  
+📚 **Neler Öğrendim?**    
 - **Veri yönetimi ve CRUD işlemleri**  
 - **Modal pencerelerle kullanıcı etkileşimi**  
 - **Form doğrulama ve hata yönetimi**  
